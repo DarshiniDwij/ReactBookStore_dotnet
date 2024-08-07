@@ -1,0 +1,39 @@
+.book-container {
+    display: flex;
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    margin: 20px; /* Adjust margin as needed */
+}
+
+.book-details {
+    display: flex;
+    align-items: center; /* Align items vertically within the book-details container */
+    padding: 10px; /* Optional: Add padding around book details */
+    width: 80%; /* Adjust width as needed */
+}
+
+.book-image {
+    width: 500px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Optional: Add margin between image and book info */
+    border: 10px solid #0E345A; 
+}
+
+.book-info {
+    flex: 1; /* Take remaining space */
+}
+
+.book-info h2 {
+    margin-top: 0; /* Remove margin for heading */
+}
+
+/* Optional: Media query for responsive design */
+@media (max-width: 768px) {
+    .book-details {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    .book-image {
+        margin-bottom: 10px; /* Optional: Add margin between image and book info */
+        margin-right: 0; /* Remove right margin on smaller screens */
+    }
+}

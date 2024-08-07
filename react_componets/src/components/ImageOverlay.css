@@ -1,0 +1,40 @@
+/* src/components/ImageOverlay.css */
+
+.image-overlay-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* Adjust height as needed */
+}
+
+.image-container {
+    position: relative;
+    max-width: 100%; /* Adjust max-width as needed */
+    /* height : 500px; */
+}
+
+.background-img {
+    width: 1400px;
+    height : 600px;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    left: 20%; 
+    top:40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #0E345A;
+    background-color: transparent ;/* Semi-transparent background */
+    /* padding: 20px; */
+}
+
+.overlay-text h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.overlay-text p {
+    font-size: 1.2rem;
+}

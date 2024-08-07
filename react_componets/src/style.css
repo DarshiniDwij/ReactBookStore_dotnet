@@ -1,0 +1,258 @@
+
+/* Golbal CSS applies throughout application */
+body {
+    background-color: #F5F5F5;;
+    /* Adjust the value to your preference */
+    /* color : #0E345A */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.custom-nav-link {
+    /* Specify your desired font color */
+    background-color: transparent !important;/* Set background color to transparent */
+    border-color: transparent !important; 
+    color : #0E345A !important;
+}
+
+.divider {
+    width: 5%;
+    margin: 10px 0; 
+    display: inline-block; /* Adjust margin for spacing */
+}
+
+.divider hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc; /* Color of the divider */
+}
+
+/* styles.css or styled components */
+.custom-button {
+    padding: 10px 40px; /* Adjust padding for button size */
+    border: 2px solid #fff; /* White border */
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Hover cursor */
+    outline: none; /* Remove default focus outline */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.custom-button:hover {
+    background-color: #fff; /* Background color on hover */
+    color: #333; /* Text color on hover */
+}
+
+.modal-content{
+    width: 1000px !important;
+    border-radius: 0 !important;
+    border: 2px solid black !important;
+}
+
+.modal-dialog{
+    margin-left: 250px !important;
+    margin-top: 100px !important;
+}
+
+.filter-divider {
+    width: 50%;
+    margin-top: 1px; 
+    margin-bottom: 1px;
+    display: contents; /* Adjust margin for spacing */
+}
+
+.filter-divider hr {
+    border: none;
+    height: 1px;
+    background-color: black; /* Color of the divider */
+}
+
+.filter-button{
+  display: flex;
+  justify-content: space-between;
+
+  margin-right: auto;
+    padding: 10px 20px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Hover cursor */
+    outline: none; /* Remove default focus outline */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+
+}
+
+.button1-container {
+    display: flex; /* Use flexbox */
+  }
+
+  .button1 {
+    margin-right: 10px; /* Optional: Add margin between buttons */
+  }
+
+
+  .modal-button {
+    padding: 10px 40px; /* Adjust padding for button size */
+    border: 2px solid black; /* White border */
+    background-color: transparent; /* Transparent background */
+    color:black; /* Text color */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Hover cursor */
+    outline: none; /* Remove default focus outline */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    width: 160px;
+}
+
+.modal-button:hover {
+    background-color: #0E345A; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Distributes items evenly */
+    margin: -10px; /* Negative margin to counteract padding */
+  }
+  
+  .book-list > * {
+    flex: 0 1 calc(25% - 20px); /* 25% width with padding */
+    margin: 10px; /* Space between items */
+    margin-top: 40px;
+  }
+
+  .main-div {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Adjust height as needed */
+  }
+  
+  .empty-div{
+    width: 100%;
+    height: 100%; /* Fills the entire app-container */
+    background-color:#d9ddde;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+  .author-img {
+    position: absolute;
+    top: 50px; /* Adjust positioning as needed */
+    left: 50px; /* Adjust positioning as needed */
+    z-index: 1; /* Above the empty-div */
+    width: 800px;
+    margin-left: 500px;
+    margin-top: -100px;
+  }
+  
+  .content-div{
+    position: absolute;
+    top: 20px; /* Adjust positioning as needed */
+    left: 20px; /* Adjust positioning as needed */
+    z-index: 2; /* Above both the empty-div and image */
+    background-color: white; /* Optional: Add a background color to distinguish */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a floating effect */
+    width: 500px;
+    border:  #0E345A  solid 10px;
+    margin-left: 120px;
+    margin-top: 180px;
+  }
+
+  .author-img img {
+    max-width: 100%; /* Ensures image does not exceed container width */
+  height: auto; /* Maintains aspect ratio */
+  }
+
+  .filter-list {
+    list-style: none; /* Remove bullet points */
+    padding-left: 2rem; /* Remove default padding */
+  }
+  
+  .filter-list li {
+    text-align: left; /* Align list items to the left */
+    margin-bottom: 10px; /* Optional: Add some space between list items */
+  }
+
+  .filetr-container {
+    display: flex; /* Use flexbox to manage items in the container */
+    justify-content: flex-start; /* Align items to the start (left) of the container */
+    align-items: center; /* Align items vertically centered */
+    width: 100%; /* Optionally set width for the container */
+    padding: 20px; /* Add padding to the container */
+  }
+
+  .icon-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .icon-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: white;
+  }
+
+  .top-books-carousel {
+    display: flex;
+    flex-wrap: nowrap; /* Ensures items stay in a single line */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 40px; /* Adjust as per your design */
+    padding: 20px; /* Adjust as per your design */
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .top-books-carousel > * {
+    flex: 0 0 auto; /* Ensures items do not shrink or grow */
+  }
+
+  .transparent-card-body {
+    background-color: transparent !important;
+  }
+
+  /* Hide scrollbar for WebKit browsers */
+.top-books-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: Hide scrollbar for Firefox */
+.top-books-carousel {
+  scrollbar-width: none;
+}
+
+.highlighted {
+  font-weight: bold; /* Example styling */
+}
+  
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+  
+  
